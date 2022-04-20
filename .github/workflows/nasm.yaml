@@ -15,6 +15,9 @@ jobs:
       id-token: 'write'
     
     steps:
+    - name: Where am I
+      run: |-
+        ls
     - name: Compile
       run: |-
         bash compile.sh
